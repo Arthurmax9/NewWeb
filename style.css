@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+  position: relative;
+  background: url('http://thecodeplayer.com/u/m/b1.png') no-repeat center center fixed;
+  background-size: cover;
+  min-width: 200px;
+  min-height: 200px;
+  color: #fff;
+  font-family: Lato;
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.nav.navbar-nav.navbar-right li a {
+  color: white;
+}
+
+p {
+  padding-right: 15%;
+  padding-left: 15%;
+  font-size: 150%;
+}
+
+blockquote {
+  margin: 2em 200px;
+}
+
+#about {
+ padding-top: 300px;
+  padding-bottom: 100px;
+  padding-right: 15%;
+  padding-left: 15%;
+  height: auto;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(-45deg, rgba(0, 146, 165, 0.4), rgba(231, 60, 126, 0.4), rgba(35, 166, 213, 0.4), rgba(35, 213, 171, 0.4));
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+}
+
+#habilidades {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-right: 15%;
+  padding-left: 15%;
+  height: auto;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(-45deg, rgba(238, 119, 82, 0.4), rgba(231, 60, 126, 0.4), rgba(35, 166, 213, 0.4), rgba(35, 213, 171, 0.4));
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+}
+
+#contact {
+  padding-top: 350px;
+  padding-bottom: 350px;
+  height: auto;
+  color: #fff;
+  text-align: center;
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.icons {
+  text-align: center;
+  max-width: 800px;
+  max-height: 300px;
+}
+
+.socialMediaSpan {
+  border: 1px solid;
+  border-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10%;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  padding-top: 15px;
+  margin: 0px;
+  transition: all .5s ease 0s;
+}
+
+.facebookBtn:hover {
+  color: #4267B2;
+}
+
+.twitterBtn:hover {
+  color: #1DA1F2;
+}
+
+.linkedinBtn:hover {
+  color: #0077B5;
+}
+
+.instagramBtn:hover {
+  color: #E13030;
+}
+
+.codepenBtn:hover {
+  color: #000;
+}
+
+.card {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  height: 300px;
+  margin: 1rem;
+  position: relative;
+  width: 300px;
+}
+
+.placeholder {
+  color: grey;
+  padding-top: 30%;
+}
+
+.card-1 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1
+}
