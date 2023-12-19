@@ -2,7 +2,7 @@
     padding-top: 50px;
     color: #fff;
     text-align: center;
-    background: linear-gradient(-45deg, rgba(0, 222, 252, 0.4), rgba(197, 118, 0, 0.4), rgba(35, 166, 213, 0.4), rgba(0, 61, 47, 0.4));
+    background: linear-gradient(-45deg, rgba(0, 146, 165, 0.4), rgba(231, 60, 126, 0.4), rgba(35, 166, 213, 0.4), rgba(35, 213, 171, 0.4));
     background-size: 400% 400%;
     animation: Gradient 15s ease infinite;
   }
@@ -36,8 +36,7 @@
     font-size: 50px;
   }
   .projects__reversed-list h3{
-    font-size:40 px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 36px;
   }
   .projects__info p{
     font-size: 20px;
@@ -58,8 +57,8 @@
     color: wheat;
 
   }
-  .projects__info h3 {
-    font-size: 45px;
+  .projects div h3 {
+    font-size: 30px;
   }
   
   .projects__info {
@@ -83,8 +82,8 @@
   }
   
   .projects ul li img {
-    width: 315px;
-    border-radius: 30px;
+    width: 270px;
+    border-radius: 100px;
     padding: 20px;
     max-width: 450px; /* Alterado para garantir que a imagem não ultrapasse a largura do contêiner */
   }

@@ -3,13 +3,11 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
- 
-  scroll-margin-top: 20rem;
-}
+ }
 
 #heder{
   margin: 0;
-  padding: auto
+  padding: 0;
   ;
 }
 
@@ -30,21 +28,27 @@ header .header__right .header__image::after {
 
 
 .header__left h1{
+  margin-top: -50;
   margin-bottom: 70px;
-  font-size: 63px;
+  font-size: 54px;
   width: 100%;
+  
 
 }
 
 .header__left p {
-  font-size: 22px;
-  margin-bottom: 50px;
+  font-size: 20px;
+  margin-bottom: 100px;
   text-align: justify;
   line-height: 27px;
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family:gstatic;
   font-weight: 500;
-  line-height: 36px;
-  justify-content: space-between;
+  border-radius: 20px;
+  background-color: rgba(83, 101, 117, 0.363);
+  padding: 40px;
+ 
+  color: rgb(255, 255, 255);
+  
  
 }
 .header__left {

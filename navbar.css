@@ -5,20 +5,16 @@
   width: 100%;
   z-index: 10;
   background-color: transparent; /* Tornando a barra de navegação transparente */
-  display:contents;
-  width: 100%;
 }
 
 .navbar .navbar__content {
   padding: 1rem 2rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: rgba(0, 0, 0, 0.8); /* Adicionando uma cor de fundo com transparência */
   color: orange;
   border-radius: 5px;
-  font-size: 27px;
 }
-
 
 
 .navbar .navbar__content .navbar__links {
@@ -27,11 +23,8 @@
 }
 
 .navbar .navbar__content .navbar__links li {
-  display: flex;
+  display: inline-block;
   margin-right: 1rem; /* Reduzi o espaço entre os links para economizar espaço */
-  font-size: 27px;
-  justify-content: space-around;
- align-items: center;
 }
 
 .navbar .navbar__content .navbar__links a {
