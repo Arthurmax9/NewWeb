@@ -2,8 +2,15 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
   
+  footer h2{
+    font-size: 49px;
+  }
+  footer p{
+    font-size: 20px;
+  }
   footer .footer__content {
     text-align: center;
     padding: 6rem 2rem 1rem;
@@ -28,5 +35,5 @@ footer {
 
   }
   footer .footer__content .footer__copyright {
-    font-size: 1.4rem;
+    font-size: 1.0rem;
   }

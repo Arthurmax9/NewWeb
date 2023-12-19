@@ -31,18 +31,20 @@ header .header__right .header__image::after {
 
 .header__left h1{
   margin-bottom: 70px;
-  font-size: 54px;
+  font-size: 63px;
   width: 100%;
 
 }
 
 .header__left p {
-  font-size: 20px;
-  margin-bottom: 30px;
+  font-size: 22px;
+  margin-bottom: 50px;
   text-align: justify;
   line-height: 27px;
-  font-family:gstatic;
+  font-family:Georgia, 'Times New Roman', Times, serif;
   font-weight: 500;
+  line-height: 36px;
+  justify-content: space-between;
  
 }
 .header__left {
