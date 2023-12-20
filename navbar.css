@@ -20,6 +20,11 @@
 .navbar .navbar__content .navbar__links {
   list-style: none;
   display: flex;
+  font-size: 20px;
+}
+.navbar .navbar__content .navbar__links li:hover {
+  color: aliceblue;
+  animation: Gradient 15s ease infinite;
 }
 
 .navbar .navbar__content .navbar__links li {
@@ -34,9 +39,7 @@
   text-decoration: none;
 }
 
-.navbar .navbar__content .navbar__links a:hover {
-  color: var(--tertiary-color);
-}
+
 
 .navbar.active {
   box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);

@@ -25,47 +25,32 @@ p {
 }
 
 blockquote {
-  margin: 2em 200px;
+  margin: 2em 10%; /* Reduzi a margem para melhor adaptação */
 }
 
 #about {
- padding-top: 160px;
-  padding-right: 15%;
-  padding-left: 15%;
+  padding-top: 160px;
+  padding-right: 10%;
+  padding-left: 10%; /* Reduzi os espaçamentos laterais */
   width: 100%;
-    color: #fff;
+  color: #fff;
   text-align: center;
   background: linear-gradient(-45deg, rgba(0, 146, 165, 0.4), rgba(231, 60, 126, 0.4), rgba(35, 166, 213, 0.4), rgba(35, 213, 171, 0.4));
   background-size: 400% 400%;
   animation: Gradient 15s ease infinite;
 }
 
-
-
 #contact {
-  padding-top: 350px;
-  padding-bottom: 350px;
-  height: auto;
+  padding-top: 150px; /* Reduzi a altura do topo para melhor adaptação */
+  padding-bottom: 150px; /* Reduzi a altura do fundo para melhor adaptação */
   color: #fff;
   text-align: center;
 }
 
-@keyframes Gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
 .icons {
   text-align: center;
-  max-width: 800px;
-  max-height: 300px;
+  max-width: 100%; /* Ocupa a largura total do contêiner pai */
+  max-height: auto; /* Permite que a altura ajuste automaticamente */
 }
 
 .socialMediaSpan {
@@ -81,41 +66,9 @@ blockquote {
   transition: all .5s ease 0s;
 }
 
-.facebookBtn:hover {
-  color: #4267B2;
-}
-
-.twitterBtn:hover {
-  color: #1DA1F2;
-}
-
-.linkedinBtn:hover {
-  color: #0077B5;
-}
-
-.instagramBtn:hover {
-  color: #E13030;
-}
-
-.codepenBtn:hover {
-  color: #000;
-}
-
-.card {
-  background: #fff;
-  border-radius: 2px;
-  display: inline-block;
-  height: 300px;
-  margin: 1rem;
-  position: relative;
-  width: 300px;
-}
-
-.placeholder {
-  color: grey;
-  padding-top: 30%;
-}
-
-.card-1 {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1
+/* Adicionei uma regra de mídia para ajustar o layout em telas menores */
+@media only screen and (max-width: 768px) {
+  .socialMediaSpan {
+    margin-bottom: 15px;
+  }
 }
