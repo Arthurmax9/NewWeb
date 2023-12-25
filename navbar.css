@@ -8,8 +8,7 @@
 }
 
 .navbar .navbar__content {
-  padding: 1rem 2rem;
-  display: flex;
+    display: flex;
   justify-content: space-between;
   background-color: rgba(0, 0, 0, 0.8); /* Adicionando uma cor de fundo com transparência */
   color: orange;
@@ -21,6 +20,7 @@
   list-style: none;
   display: flex;
   font-size: 20px;
+  padding: 20px;
 }
 .navbar .navbar__content .navbar__links li:hover {
   color: aliceblue;

@@ -1,17 +1,28 @@
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
- }
-
-#heder{
-  margin: 0;
-  padding: 0;
-  ;
+  background: linear-gradient(-45deg, rgba(0, 80, 65, 0.4), rgba(6, 1, 145, 0.4), rgba(2, 142, 193, 0.4), rgba(1, 179, 137, 0.4));
+  animation: Gradient 10s ease infinite;
 }
 
-
+#header { /* Corrigido o ID para #header */
+  margin: 0;
+  padding: 0;
+}
 
 header .header__right .header__image::after {
   content: '';
@@ -26,14 +37,11 @@ header .header__right .header__image::after {
   z-index: -1;
 }
 
-
-.header__left h1{
-  margin-top: -50;
+.header__left h1 {
+  margin-top: 50px; /* Corrigido o valor da margem superior */
   margin-bottom: 70px;
   font-size: 54px;
   width: 100%;
-  
-
 }
 
 .header__left p {
@@ -41,16 +49,14 @@ header .header__right .header__image::after {
   margin-bottom: 100px;
   text-align: justify;
   line-height: 27px;
-  font-family:gstatic;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 500;
   border-radius: 20px;
   background-color: rgba(83, 101, 117, 0.363);
   padding: 40px;
- 
   color: rgb(255, 255, 255);
-  
- 
 }
+
 .header__left {
   display: flex;
   justify-content: space-between;
@@ -60,26 +66,24 @@ header .header__right .header__image::after {
   align-items: center;
   font-size: 20px;
   margin-bottom: 20px;
-  line-height: 1.5; /* Ajuste este valor conforme necessário */
+  line-height: 1.5;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/* Adicione flex-wrap para garantir que os itens se ajustem à largura disponível */
 .header__left ul {
   display: flex;
   flex-wrap: wrap;
-  list-style: none; /* Remova os estilos de lista padrão */
-  padding: 0; /* Remova o preenchimento padrão da lista */
-  margin: 0; /* Remova as margens padrão da lista */
+  list-style: none;
+  padding: 0;
+  margin: 0;
   justify-content: center;
 }
 
-.header__left ul li img{
+.header__left ul li img {
   width: 25px;
   border-radius: 7px;
   margin-right: 10px;
   margin: 20px 20px auto;
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -88,7 +92,7 @@ header .header__right .header__image::after {
     text-align: center;
   }
 
-  header .header__left p {
+  .header__left p {
     margin: 2rem auto 4rem;
   }
 }

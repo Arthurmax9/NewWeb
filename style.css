@@ -8,6 +8,7 @@ body {
   min-height: 200px;
   color: #fff;
   font-family: Lato;
+  
 }
 
 .navbar {
@@ -28,6 +29,9 @@ blockquote {
   margin: 2em 10%; /* Reduzi a margem para melhor adaptação */
 }
 
+#skills{
+  font-size: 36px;
+}
 #about {
   padding-top: 160px;
   padding-right: 10%;
@@ -35,9 +39,14 @@ blockquote {
   width: 100%;
   color: #fff;
   text-align: center;
-  background: linear-gradient(-45deg, rgba(0, 146, 165, 0.4), rgba(231, 60, 126, 0.4), rgba(35, 166, 213, 0.4), rgba(35, 213, 171, 0.4));
+  background: linear-gradient(-45deg, rgba(0, 80, 65, 0.4), rgba(6, 1, 145, 0.4), rgba(2, 142, 193, 0.4), rgba(1, 179, 137, 0.4));
   background-size: 400% 400%;
-  animation: Gradient 15s ease infinite;
+  animation: Gradient 10s ease infinite;
+}
+
+#projects{
+
+  font-size: 36px;
 }
 
 #contact {
