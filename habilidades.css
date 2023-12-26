@@ -41,7 +41,28 @@
 
 .habilidades ul li img {
   width: 25px;
-  border-radius: 10px; /* Corrigido o valor da borda */
+  border-radius: 10px;
   margin-right: 10px;
   padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .habilidades {
+    padding-top: 50px; /* Ajustado o espaçamento superior em telas menores */
+    padding-bottom: 50px; /* Ajustado o espaçamento inferior em telas menores */
+  }
+
+  .habilidades ul {
+    flex-direction: column; /* Empilha os itens verticalmente em telas menores */
+    align-items: center;
+  }
+
+  .habilidades ul li {
+    margin-bottom: 10px; /* Reduzido o espaçamento entre os itens em telas menores */
+  }
+
+  .habilidades ul li img {
+    width: 20px; /* Reduzido o tamanho da imagem em telas menores */
+    padding: 10px; /* Reduzido o espaçamento interno em telas menores */
+  }
 }

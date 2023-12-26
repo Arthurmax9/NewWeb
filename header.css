@@ -19,7 +19,7 @@
   animation: Gradient 10s ease infinite;
 }
 
-#header { /* Corrigido o ID para #header */
+#header {
   margin: 0;
   padding: 0;
 }
@@ -38,7 +38,7 @@ header .header__right .header__image::after {
 }
 
 .header__left h1 {
-  margin-top: 50px; /* Corrigido o valor da margem superior */
+  margin-top: 50px;
   margin-bottom: 70px;
   font-size: 54px;
   width: 100%;
@@ -86,10 +86,18 @@ header .header__right .header__image::after {
   margin: 20px 20px auto;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 458px) {
   header {
     flex-direction: column-reverse;
     text-align: center;
+    display: flex;
+    width: 100%;
+
+  }
+
+  .header__left {
+    flex-direction: column;
+    align-items: center;
   }
 
   .header__left p {

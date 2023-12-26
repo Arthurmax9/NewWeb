@@ -1,23 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
 body {
-  position: relative;
+  
   background: url('http://thecodeplayer.com/u/m/b1.png') no-repeat center center fixed;
   background-size: cover;
-  min-width: 200px;
-  min-height: 200px;
+  
   color: #fff;
   font-family: Lato;
-  
 }
 
 .navbar {
   background: rgba(0, 0, 0, 0.85);
+  justify-content: space-around;
+
 }
 
 .nav.navbar-nav.navbar-right li a {
   color: white;
+  display: flex;
+  
+  
 }
+
 
 p {
   padding-right: 15%;
@@ -26,16 +30,21 @@ p {
 }
 
 blockquote {
-  margin: 2em 10%; /* Reduzi a margem para melhor adaptação */
+  margin: 2em 10%;
 }
 
-#skills{
+#skills {
   font-size: 36px;
 }
+header, .habilidades, footer {
+  height: 100%;
+  width: 100%;
+}
+
 #about {
   padding-top: 160px;
   padding-right: 10%;
-  padding-left: 10%; /* Reduzi os espaçamentos laterais */
+  padding-left: 10%;
   width: 100%;
   color: #fff;
   text-align: center;
@@ -44,22 +53,21 @@ blockquote {
   animation: Gradient 10s ease infinite;
 }
 
-#projects{
-
+#projects {
   font-size: 36px;
 }
 
 #contact {
-  padding-top: 150px; /* Reduzi a altura do topo para melhor adaptação */
-  padding-bottom: 150px; /* Reduzi a altura do fundo para melhor adaptação */
+  padding-top: 150px;
+  padding-bottom: 150px;
   color: #fff;
   text-align: center;
 }
 
 .icons {
   text-align: center;
-  max-width: 100%; /* Ocupa a largura total do contêiner pai */
-  max-height: auto; /* Permite que a altura ajuste automaticamente */
+  max-width: 100%;
+  max-height: auto;
 }
 
 .socialMediaSpan {
@@ -75,8 +83,28 @@ blockquote {
   transition: all .5s ease 0s;
 }
 
-/* Adicionei uma regra de mídia para ajustar o layout em telas menores */
-@media only screen and (max-width: 768px) {
+/* Regra de mídia para ajustar o layout em telas menores */
+@media only screen and (max-width: 400px) {
+  p {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+
+  blockquote {
+    margin: 2em 5%;
+  }
+
+  #about {
+    padding-top: 80px;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+
+  #contact {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
   .socialMediaSpan {
     margin-bottom: 15px;
   }
