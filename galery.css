@@ -1,125 +1,67 @@
-.gallery.container-fluid {
-  position: relative;
-  
-}
-
-.carousel-container {
-
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 10px;
-  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+.container {
+  max-width: 98%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 0.5em;
   background: linear-gradient(-45deg, rgba(0, 80, 65, 0.4), rgba(6, 1, 145, 0.4), rgba(2, 142, 193, 0.4), rgba(1, 179, 137, 0.4));
-  background-size: 400% 400%;
+  background-size: 100% 100%;
   animation: GradientHabilidades 15s ease infinite;
-  width: calc(100% - 20px); /* Ajuste na largura considerando o padding de 10px em cada lado */
 }
 
-.project-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  position: relative; /* Adicionado para posicionar os botões relativamente aos projetos */
+header > h1 {
+  margin-top: 0;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 2.5rem;
+  border-bottom: 1px solid #eee;
 }
 
-.project-item {
-  width: 40%;
-  margin: 0 5px;
-  position: relative; /* Adicionado para posicionar os botões relativamente aos projetos */
+.gallery {
+  display: grid;
+  margin: 3em 0;
+  grid-gap: 2em;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.project-item figure {
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+figure {
   position: relative;
   overflow: hidden;
-  cursor: pointer;
 }
 
-.project-item img {
-  max-width: 90%; /* Aumentado um pouco o tamanho da imagem */
-  max-height: 90%; /* Adicionado para garantir que a altura da imagem também seja ajustada */
-  width: auto;
+img {
+  max-width: 100%;
   height: auto;
   transition: transform 0.3s ease-in-out;
 }
 
-.overlay {
+figcaption {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  pointer-events: none;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 1em;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
 }
 
-.overlay-content {
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.project-item:hover .overlay-content {
-  opacity: 1;
-}
-
-.project-item.active .overlay {
-  opacity: 1;
-}
-
-.project-item:hover img {
+figure:hover img {
   transform: scale(1.1);
 }
 
-.project-title,
-.project-description {
-  color: #fff;
-  margin: 5px;
-  text-align: center;
-  display: flex;
-  justify-content: space-around;
+figure:hover figcaption {
+  transform: translateY(0);
 }
 
-.prev-button,
-.next-button {
-  position: absolute;
-  top: 50%;
-  font-size: 18px; /* Aumentado o tamanho da fonte */
-  background-color: #fff; /* Fundo branco */
-  color: #000; /* Texto preto para contraste */
-  border: none;
-  padding: 10px; /* Aumentado o padding dos botões */
-  cursor: pointer;
-  width: 40px; /* Aumentado o tamanho do botão */
-  height: 40px; /* Aumentado o tamanho do botão */
-  transform: translateY(-50%);
-}
-
-.prev-button img,
-.next-button img {
-  max-width: 100%;
-  max-height: 100%;
+.gallery {
   width: auto;
-  height: auto;
-}
-
-.prev-button {
-  left: 0; /* Centralizado na esquerda */
-}
-
-.next-button {
-  right: 0; /* Centralizado na direita */
-}
-
-.prev-button:hover,
-.next-button:hover {
-  background-color: #ddd; /* Fundo cinza claro no hover para indicar interatividade */
 }
