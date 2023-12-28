@@ -147,7 +147,7 @@ header, .habilidades, footer {
   .btn {
     width: auto; /* Reduce width for smaller screens */
     height:auto; /* Reduce height for smaller screens */
-    font-size: 15px; /* Reduce font size for better fit */
+    font-size: auto; /* Reduce font size for better fit */
     text-decoration: none;
   }
   
