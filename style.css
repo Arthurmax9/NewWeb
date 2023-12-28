@@ -144,8 +144,8 @@ header, .habilidades, footer {
     margin-bottom: 15px;
   }
   .btn {
-    width: auto; /* Reduce width for smaller screens */
-    height: auto; /* Reduce height for smaller screens */
+    width: 10%; /* Reduce width for smaller screens */
+    height: 10%; /* Reduce height for smaller screens */
     font-size: 7px; /* Reduce font size for better fit */
   }
   
