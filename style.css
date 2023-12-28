@@ -96,7 +96,8 @@ header, .habilidades, footer {
   border-radius: 40px;
   font-size: 20px;
   justify-content: space-around;
-  
+  text-decoration: none;
+  background-color: aliceblue;
   
   
 }
@@ -144,9 +145,10 @@ header, .habilidades, footer {
     margin-bottom: 15px;
   }
   .btn {
-    width: 10%; /* Reduce width for smaller screens */
-    height: 10%; /* Reduce height for smaller screens */
+    width: 7%; /* Reduce width for smaller screens */
+    height: 7%; /* Reduce height for smaller screens */
     font-size: 7px; /* Reduce font size for better fit */
+    text-decoration: none;
   }
   
 }
