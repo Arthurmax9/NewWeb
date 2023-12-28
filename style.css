@@ -145,9 +145,9 @@ header, .habilidades, footer {
     margin-bottom: 15px;
   }
   .btn {
-    width: 7%; /* Reduce width for smaller screens */
-    height: 7%; /* Reduce height for smaller screens */
-    font-size: 7px; /* Reduce font size for better fit */
+    width: auto; /* Reduce width for smaller screens */
+    height:auto; /* Reduce height for smaller screens */
+    font-size: 15px; /* Reduce font size for better fit */
     text-decoration: none;
   }
   
