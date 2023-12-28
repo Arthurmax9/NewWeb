@@ -69,7 +69,7 @@
     justify-content: space-around;
     display: flex;
     justify-content: center;
-    font-size: 10px; /* Adjust font size for smaller screens */
+    font-size: 15px; /* Adjust font size for smaller screens */
   }
 
   .navbar .navbar__content .navbar__links li {

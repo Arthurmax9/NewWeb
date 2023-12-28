@@ -7,6 +7,7 @@ body {
   width: 100%;
   color: #fff;
   font-family: Lato;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .navbar {
@@ -53,9 +54,6 @@ header, .habilidades, footer {
   animation: Gradient 10s ease infinite;
 }
 
-#projects {
-  font-size: 36px;
-}
 
 #contact {
   padding-top: 150px;
@@ -82,11 +80,13 @@ header, .habilidades, footer {
   margin: 0px;
   transition: all .5s ease 0s;
 }
-
+.btn a{
+  text-decoration: none;
+  color: aliceblue;
+}
 .btn {
   width: auto;
-  margin: 20px;
-  height: 40px;
+  margin: 10px;
   cursor: pointer;
   background: transparent;
   border: 1px solid #91C9FF;
@@ -94,10 +94,11 @@ header, .habilidades, footer {
   color: rgb(78, 0, 166) bold;
   transition: 1s ease-in-out;
   border-radius: 40px;
-  font-size: 20px;
+  font-size: 15px;
   justify-content: space-around;
   text-decoration: none;
-  background-color: aliceblue;
+  background-color: rgb(7, 88, 160);
+  align-items: center;
   
   
 }
