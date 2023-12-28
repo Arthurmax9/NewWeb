@@ -84,9 +84,9 @@ header, .habilidades, footer {
 }
 
 .btn {
-  width: 110px;
+  width: auto;
   margin: 20px;
-  height: 60px;
+  height: 40px;
   cursor: pointer;
   background: transparent;
   border: 1px solid #91C9FF;
@@ -96,6 +96,8 @@ header, .habilidades, footer {
   border-radius: 40px;
   font-size: 20px;
   justify-content: space-around;
+  
+  
   
 }
 
@@ -142,9 +144,9 @@ header, .habilidades, footer {
     margin-bottom: 15px;
   }
   .btn {
-    width: 40px; /* Reduce width for smaller screens */
-    height: 40px; /* Reduce height for smaller screens */
-    font-size: 16px; /* Reduce font size for better fit */
+    width: auto; /* Reduce width for smaller screens */
+    height: auto; /* Reduce height for smaller screens */
+    font-size: 7px; /* Reduce font size for better fit */
   }
   
 }
