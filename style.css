@@ -4,7 +4,7 @@ body {
   
   background: url('http://thecodeplayer.com/u/m/b1.png') no-repeat center center fixed;
   background-size: cover;
-  
+  width: 100%;
   color: #fff;
   font-family: Lato;
 }
@@ -43,8 +43,8 @@ header, .habilidades, footer {
 
 #about {
   padding-top: 160px;
-  padding-right: 10%;
-  padding-left: 10%;
+  padding-right: 10px;
+  padding-left: 40px;
   width: 100%;
   color: #fff;
   text-align: center;
@@ -83,6 +83,39 @@ header, .habilidades, footer {
   transition: all .5s ease 0s;
 }
 
+.btn {
+  width: 110px;
+  margin: 20px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #91C9FF;
+  outline: none;
+  color: rgb(78, 0, 166) bold;
+  transition: 1s ease-in-out;
+  border-radius: 40px;
+  font-size: 20px;
+  justify-content: space-around;
+  
+}
+
+
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: #4F95DA;
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
+
 /* Regra de mídia para ajustar o layout em telas menores */
 @media only screen and (max-width: 400px) {
   p {
@@ -108,4 +141,10 @@ header, .habilidades, footer {
   .socialMediaSpan {
     margin-bottom: 15px;
   }
+  .btn {
+    width: 40px; /* Reduce width for smaller screens */
+    height: 40px; /* Reduce height for smaller screens */
+    font-size: 16px; /* Reduce font size for better fit */
+  }
+  
 }
