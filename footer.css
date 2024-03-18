@@ -2,6 +2,14 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
+ background-color: black;
+  color: rgb(0, 61, 114);
+}
+
+footer p{
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 footer .footer__content {
@@ -12,11 +20,13 @@ footer .footer__content {
 
 footer .footer__content .footer__contact span {
   display: block;
-  font-weight: 500;
+  font-size: 20px;
 }
 
 footer .footer__content ul li {
   display: inline-block;
+  background-color: rgb(23, 23, 23);
+  border-radius: 20px
 }
 
 footer .footer__content ul a {
@@ -26,10 +36,11 @@ footer .footer__content ul a {
 
 footer .footer__content ul li img {
   width: 45px;
+ 
 }
 
 footer .footer__content .footer__copyright {
-  font-size: 1.4rem;
+  font-size:20px;
 }
 
 @media only screen and (max-width: 768px) {

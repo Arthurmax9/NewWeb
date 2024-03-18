@@ -1,26 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
 body {
-  
-  background: url('http://thecodeplayer.com/u/m/b1.png') no-repeat center center fixed;
   background-size: cover;
+  background-color: rgb(0, 0, 0);
   width: 100%;
-  color: #fff;
+
   font-family: Lato;
   font-family: 'Times New Roman', Times, serif;
-}
-
-.navbar {
-  background: rgba(0, 0, 0, 0.85);
-  justify-content: space-around;
-
-}
-
-.nav.navbar-nav.navbar-right li a {
-  color: white;
-  display: flex;
-  
-  
 }
 
 
@@ -30,16 +16,29 @@ p {
   font-size: 150%;
 }
 
-blockquote {
-  margin: 2em 10%;
-}
+
 
 #skills {
   font-size: 36px;
 }
-header, .habilidades, footer {
+
+header,
+.habilidades,
+footer {
   height: 100%;
   width: 100%;
+}
+
+#about h1 {
+  font-size: 100px;
+}
+
+#about p {
+  width: 50%;
+  height: auto;
+  background-color: rgba(24, 24, 24, 0.362);
+  color: rgb(255, 255, 255);
+  filter: brightness(1);
 }
 
 #about {
@@ -49,9 +48,12 @@ header, .habilidades, footer {
   width: 100%;
   color: #fff;
   text-align: center;
-  background: linear-gradient(-45deg, rgba(0, 80, 65, 0.4), rgba(6, 1, 145, 0.4), rgba(2, 142, 193, 0.4), rgba(1, 179, 137, 0.4));
-  background-size: 400% 400%;
-  animation: Gradient 10s ease infinite;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
@@ -80,10 +82,12 @@ header, .habilidades, footer {
   margin: 0px;
   transition: all .5s ease 0s;
 }
-.btn a{
+
+.btn a {
   text-decoration: none;
   color: aliceblue;
 }
+
 .btn {
   width: auto;
   margin: 10px;
@@ -99,8 +103,8 @@ header, .habilidades, footer {
   text-decoration: none;
   background-color: rgb(7, 88, 160);
   align-items: center;
-  
-  
+
+
 }
 
 
@@ -145,11 +149,15 @@ header, .habilidades, footer {
   .socialMediaSpan {
     margin-bottom: 15px;
   }
+
   .btn {
-    width: auto; /* Reduce width for smaller screens */
-    height:auto; /* Reduce height for smaller screens */
-    font-size: auto; /* Reduce font size for better fit */
+    width: auto;
+    /* Reduce width for smaller screens */
+    height: auto;
+    /* Reduce height for smaller screens */
+    font-size: auto;
+    /* Reduce font size for better fit */
     text-decoration: none;
   }
-  
+
 }

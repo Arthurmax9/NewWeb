@@ -22,6 +22,8 @@
   <link rel="stylesheet" href="global.css">
   <link rel="stylesheet" href="footer.css">
   <link rel="stylesheet" href="galery.css">
+  <link rel="stylesheet" href="testegalery.css">
+  <link rel="stylesheet" href="services.css">
 
 
 </head>
@@ -31,29 +33,30 @@
   <nav class="navbar">
 
     <div class="navbar__content  mb-0">
-     
+
 
       <ul class="navbar__links">
         <li><a href="#about">Início</a></li>
         <li><a href="#skills">Habilidades</a></li>
-        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#galeria">Projetos</a></li>
         <li><a href="#footer">Contato</a></li>
       </ul>
   </nav>
 
   <header class="header__left">
     <div id="about">
-      <h1>Sou o Arthur Max</h1>
-      <p>Estudante de Análise e Desenvolvimento de Sistemas.
-        desenvolvedor web front-end buscando novas experiência em desenvolvimento
-        de aplicações web escaláveis e responsivas.
-        Sou apaixonado por criar soluções tecnológicas que resolvem problemas reais e que agregam valor
-        aos usuários.
-
-
-        Sou apaixonado por desenvolvimento de software, especialmente em Front-End.
-        Tenho alguns projetos pessoais desenvolvidos com as linguagens modernas e responsivas utilizando
-
+      <h1>Arthur <small>MACi</small></h1>
+      <p>Me chamo Arthur Max e sou entusiasta por aprender constantemente, 
+        sendo autodidata por natureza. Na área de tecnologia, 
+        isso se tornou uma possibilidade mais ampla para mim. Desde criança,
+         sempre fui fascinado pela inovação, descobertas e criação, com a tecnologia enxergo uma forma de
+          explorar novas possibilidades, o que me levou a estar cursando Análise e Desenvolvimento de Sistemas. <br>
+          <br>
+           Atualmente em transição de carreira, tenho trabalhado em alguns projetos Front-End,
+            utilizando HTML5, CSS3 e JavaScript, e estou começando a me aventurar em projetos com React.js e Node.js. 
+            Minha bagagem inclui uma vasta experiência em cargos administrativos e vendas, onde minha habilidade de comunicação se destacou, 
+            ajudando na gestão de projetos e equipes. Sou colaborativo por natureza e enxergo facilidade em trabalhar em grupo. 
+            Estou constantemente em busca de novos conhecimentos e oportunidades para aprimorar minhas habilidades.
       </p>
     </div>
     </div>
@@ -63,7 +66,7 @@
 
     <h2>Habilidades</h2>
     <ul>
-      
+
       <li> <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png"
           alt="">JAVASCRIPT<br></li>
@@ -73,18 +76,18 @@
       <li> <img
           src="https://w7.pngwing.com/pngs/1006/374/png-transparent-web-development-node-js-socket-io-javascript-network-socket-modernization-miscellaneous-logo-web-application-thumbnail.png"
           alt=""> NODE.JS
-        </li>
-      
-      
-          <li>
-             <img src="https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5.png" alt=""> HTML
-            </li>
-      
-      <li> 
+      </li>
+
+
+      <li>
+        <img src="https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5.png" alt=""> HTML
+      </li>
+
+      <li>
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNujFvFqRt2y8ZqGdd9bWoWrMac00C-u9rsY6e-6sk68rcMoQOigEZw49igtuREjdT7bc&usqp=CAU"
           alt="">CSS
-          </li>
+      </li>
 
 
     </ul>
@@ -115,55 +118,53 @@
 
 
 
- 
-  <div class="container">
-    <header><h1>Projetos</h1></header>
-    <p><small>passe o mouse ou clique nas imagens</small></p>
-    <main class="gallery">
 
-      <figure>
-        
-        <img src="assets/assets/tempo2.png" alt="unsplash image" />
-        <figcaption>
-          <h3>App Previsão tempo</h3>
-          <p>Site de previsão de tempo desinvolvido em HTML, CSS, JAVASCRIPT E COM USO DE API EM TEMPO REAL</p>
-          <button class="btn"><a href="https://arthurmax9.github.io/tempojs/"target="_blank">Site</a></button>
-          <button class="btn"><a href="https://github.com/Arthurmax9/tempojs"target="_blank">Repositorio</a></button>
-        </figcaption>
-        
-      </figure>
-      <figure>
-        <img src="assets/newtaref2.PNG" alt="unsplash image" />
-        <figcaption>
-          <h3>Lista de tarefas e projetos</h3>
-          <p>Lista de tarefas e projetos utilizando HTML,CSS e JAVASCRIPT 2</p>
-          <button class="btn"><a href="https://arthurmax9.github.io/produtive/"target="_blank">Site</a></button>
-          <button class="btn"><a href="https://github.com/Arthurmax9/produtive" target="_blank">Repositorio</a></button>
-        </figcaption>
-      </figure>
-      <figure>
-<img src="assets/ecomerce2024.png" alt="">        <figcaption>
-          <h3>Projeto de E-commerce</h3>
-          <p>projeto e-commerce em desinvolvimento</p>
-          <button class="btn"><a href="https://arthurmax9.github.io/newecmerce2024/" target="_blank">Site</a></button>
-          <button class="btn"><a href="https://github.com/Arthurmax9/newecmerce2024">Repositorio</a></button>
-        </figcaption>
-      </figure>
-    </main>
+
+  <div class="galeria" id="galeria">
+    <section class="conteinerproject">
+    <h1>PROJETOS</h1>
+    <div class="imgPrincipal">
+      <img src="" class="selected"> 
+      <div class="overlay">
+        <div class="overlay-content">
+          <h3></h3>
+          <p></p>
+          <a href="link1.html" class="overlay-button"></a>
+          <a href="link2.html" class="overlay-button"></a>
+        </div>  
+      </div>
+    </div>
     
+    <div class="thumbnails">
+      <img src="assets/newtaref2.PNG" alt="Thumbnail 1" data-full="assets/newtaref2.PNG" data-overlay="overlay1">
+      <img src="assets/tempo2.png" alt="Thumbnail 3" data-full="assets/tempo2.png" data-overlay="overlay2">
+      <img src="assets/ecomerce2024.png" alt="Thumbnail 4" data-full="assets/ecomerce2024.png" data-overlay="overlay3">
+    </div>
+    <h4>Selecione a imagem </h4>
+    </section>
   </div>
-
-
-
-
-
-
-
-
+  
+<div class="services">
+  <section id="item">
+    <img src="/NewWeb-1912/assets/validacao-de-site-1-1024x560-removebg-preview.png" alt="">
+    <h3>Aplicação Web</h3>
+    <p>Desde uma simples landing page até sites pessoais, comerciais e lojas virtuais</p>
+  </section>
+  <section id="item"  >
+    <img src="/NewWeb-1912/assets/uldesing-removebg-preview.png" alt="">
+    <h3>UX/UI Desing</h3>
+    <p>A experiência do usuário e o planejamento visual do projeto para aplicações mais modernas e utilizáveis ao usuário final. </p>
+  </section>
+  <section id="item" >
+    <img src="/NewWeb-1912/assets/image-removebg-preview (5).png" alt="">
+    <h3>Desing Grafico</h3>
+    <p>Uma arte digital faz toda diferença para sua interface. Logos, convites, banners.</p>
+  </section>
+</div>
 
   <footer id="footer">
     <div class="footer__content max-width mb-0">
-      <h2 class="tertiary-title mb-s">Contatos</h2>
+      <h1 class="tertiary-title mb-s">Contatos</h1>
       <p class="mb-m">
         Ficarei feliz em saber mais sobre seus projetos e como podemos
         trabalhar juntos para torná-los realidade.
@@ -191,11 +192,12 @@
 
       </ul>
       <p class="footer__copyright">
-        © 2023 Arthur Max. Todos os direitos reservados 2023.
+        © 2024 Arthur Max. Todos os direitos reservados.
       </p>
     </div>
   </footer>
   <script src="main.js"></script>
+  <script src="testegalery.js"></script>
 </body>
 
 </html>

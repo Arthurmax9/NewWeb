@@ -6,7 +6,7 @@
   text-align: center;
   background-color: #fff;
   border-radius: 0.5em;
-  background: linear-gradient(-45deg, rgba(0, 80, 65, 0.4), rgba(6, 1, 145, 0.4), rgba(2, 142, 193, 0.4), rgba(1, 179, 137, 0.4));
+  background: linear-gradient(-45deg, rgba(13, 14, 14, 0.4), rgba(0, 0, 0, 0.4), rgba(9, 9, 10, 0.4), rgba(34, 36, 35, 0.4));
   background-size: 400% 400%;
   animation: Gradient 10s ease infinite;
 
