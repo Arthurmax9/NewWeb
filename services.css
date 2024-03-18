@@ -1,0 +1,55 @@
+.services{
+    width: 100%;
+    height: auto;
+    display: flex;
+   align-items: center;
+   justify-content: space-around;
+   background-color: black;
+}
+
+#item img{
+width: 290px;
+height: 250px;
+image-rendering: auto;
+object-fit: contain;
+margin: 2px;
+
+
+}
+
+.services section{
+    margin: 30px;
+    align-items: center;
+    align-self: center;
+    background-color: rgb(33, 9, 81);
+    height: auto;
+    max-height: 500px;
+    border-radius: 10px;
+    width: auto;
+    display: flex;
+    flex-direction:column;
+    color:rgb(0, 0, 0);
+    box-shadow: inset;
+}
+
+.services section h3{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all;
+}
+
+h3{ 
+    filter: brightness(1);
+    background-image: linear-gradient(to right, rgb(16, 19, 227), rgb(42, 42, 146),white);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: color-change 2s infinite linear;
+    margin: 0;
+  }
+
+  .services section p{
+    color: rgb(86, 84, 131);
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   filter: brightness(1.9);
+  }

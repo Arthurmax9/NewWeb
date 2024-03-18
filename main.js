@@ -8,6 +8,22 @@ $('.navbar-collapse ul li a').click(function() {
     $('html, body').stop().animate({scrollTop: $($anchor.attr('href')).offset().top},1500,'easeInOutExpo');
     event.preventDefault();
     });
+
+
+    
   });
   
-      
+ 
+  document.addEventListener('DOMContentLoaded', function () {
+    const figures = document.querySelectorAll('.gallery figure');
+
+    figures.forEach((figure) => {
+      figure.addEventListener('mouseover', function () {
+        figure.classList.add('enlarged');
+      });
+
+      figure.addEventListener('mouseout', function () {
+        figure.classList.remove('enlarged');
+      });
+    });
+  });

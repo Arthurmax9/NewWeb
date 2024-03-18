@@ -1,0 +1,172 @@
+.galeria {
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+ 
+  flex-direction: column;
+  background-color: #000000;
+}
+
+.galeria h1{
+  margin-top: 100px;
+color: #ccc;
+  animation: color-change 2s infinite linear;  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  filter: brightness(1.9);
+ 
+}
+
+.conteinerproject{
+  background-color: rgb(21, 6, 54);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  width: 60%;
+  border-radius: 20px;
+  
+  height: 600px;
+}
+
+.galeria .imgPrincipal {
+  margin-top: 30px;
+  width: 80%; /* Utilize 80% da largura da tela */
+  max-width: 570px; /* Largura máxima para evitar expansão excessiva */
+  height: 400;
+  object-fit: contain;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+ 
+ 
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 80%; /* Utilize 80% da largura da tela */
+  max-width: 1200px; /* Largura máxima para evitar expansão excessiva */
+  margin-bottom: 30px;
+}
+
+.thumbnails img {
+  width: 100px; /* Tamanho padrão das miniaturas */
+  height: 75px; /* Tamanho padrão das miniaturas */
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.thumbnails img.selected {
+  border: 2px solid #fff;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.controls button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background-color: #000000;
+}
+
+.imgPrincipal {
+  position: relative;
+  width: auto;
+  height: auto;
+  border-radius: 20px;
+}
+
+.imgPrincipal img {
+  background-size: cover;
+  border-radius: 10px;
+  width: 570px; /* Largura padrão das imagens */
+  height: 400px; /* Altura padrão das imagens */
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+}
+
+.imgPrincipal:hover img,
+.imgPrincipal.active img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 50%; /* Alinha o topo do overlay ao centro vertical da imagem principal */
+  left: 50%; /* Alinha a esquerda do overlay ao centro horizontal da imagem principal */
+  transform: translate(-50%, -50%); /* Move o overlay de volta 50% da sua largura e altura */
+  width: 75%;
+  height: 60%;
+  background-color: rgba(0, 0, 0, 0.899);
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.overlay-content {
+  position: relative; /* Muda para posição relativa */
+  width: auto;
+  height: auto;
+  top: 50%; /* Ajustado para alinhar verticalmente */
+  left: 50%;
+  transform: translate(-50%, -50%); /* Move o conteúdo do overlay de volta 50% da sua largura e altura */
+  text-align: center; /* Ajustado para centralizar o texto */
+  text-align: center;
+}
+
+
+.imgPrincipal:hover .overlay,
+.imgPrincipal.active .overlay {
+  opacity: 1;
+}
+
+
+
+.overlay-content h3 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.overlay-content p {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.overlay-button {
+  display: inline-block;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.overlay-button:hover {
+  background-color: #1c1b1b;
+}
